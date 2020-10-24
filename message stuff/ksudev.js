@@ -18,7 +18,7 @@ client.on('message', msg=> {
     }
 }
 );
-// ADMIN CODE
+// kick
 client.on('message', message => {
     if (!message.guild) return;
  
@@ -30,7 +30,7 @@ client.on('message', message => {
          member
            .kick('Optional reason that will display in the audit logs')
            .then(() => {
-             message.reply(`kicked ${user.tag}`);
+             message.reply(`succes`);
            })
            .catch(err => {
              message.reply('missing perms/error');
@@ -41,7 +41,7 @@ client.on('message', message => {
          message.reply("user does not exist here");
        }
       } else {
-       message.reply("err: no one was mentioned");
+       message.reply(" ``err: no one was mentioned``` ");
      }
    }
  });
@@ -54,6 +54,35 @@ client.on('message', message => {
       const connection = await message.member.voice.channel.join();
     } else {
       message.reply('go in vc nerd');
+    }
+  }
+});
+// ban
+client.on('message', message => {
+  if (!message.guild) return;
+
+  if (message.content.startsWith('!ban')) {
+    const user = message.mentions.users.first();
+    if (user) {
+      const member = message.guild.member(user);
+      if (member) {
+         */
+        member
+          .ban({
+            reason: 'They were bad!',
+          })
+          .then(() => {
+            message.reply(`Successfully banned ${user.tag}`);
+          })
+          .catch(err => {
+            message.reply('I was unable to ban the member');
+            console.error(err);
+          });
+      } else {
+        message.reply("That user isn't in this guild!");
+      }
+    } else {
+      message.reply("You didn't mention the user to ban!");
     }
   }
 });
