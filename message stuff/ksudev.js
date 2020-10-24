@@ -7,13 +7,13 @@ client.on('ready', () => {
 });
 // MESSAGE CODE
 client.on('message', msg=> {
-    if (msg.content === '*play lofi hiphop'){
+    if (msg.content === '!play lofi hiphop'){
         msg.reply('https://www.youtube.com/watch?v=5qap5aO4i9A')
     }
 }
 );
 client.on('message', msg=> {
-    if (msg.content === '*dankmeme'){
+    if (msg.content === '!dankmeme'){
         msg.reply('https://www.reddit.com/r/dankmemes/')
     }
 }
@@ -49,7 +49,7 @@ client.on('message', message => {
  client.on('message', async message => {
   if (!message.guild) return;
 
-  if (message.content === '*join voice') {
+  if (message.content === '!join voice') {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
     } else {
