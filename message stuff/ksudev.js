@@ -66,10 +66,10 @@ client.on('message', message => {
     if (user) {
       const member = message.guild.member(user);
       if (member) {
-         */
+         
         member
           .ban({
-            reason: 'They were bad!',
+            reason: '',
           })
           .then(() => {
             message.reply(`Successfully banned ${user.tag}`);
