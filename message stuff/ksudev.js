@@ -48,8 +48,7 @@ client.on('message', message => {
  // VC CODE
  client.on('message', async message => {
   if (!message.guild) return;
-
-  if (message.content === '!join voice') {
+    if (message.content === '!join voice') {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
     } else {
