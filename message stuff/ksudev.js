@@ -30,25 +30,25 @@ client.on('message', message => {
          member
            .kick('Optional reason that will display in the audit logs')
            .then(() => {
-             message.reply(`succes`);
+             message.reply( ```succes```);
            })
            .catch(err => {
-             message.reply('missing perms/error');
+             message.reply(' ```missing perms/error``` ');
              console.error(err);
            });
        } else {
          // The mentioned user isn't in this guild
-         message.reply("user does not exist here");
+         message.reply(" ```user does not exist here``` ");
        }
       } else {
-       message.reply(" ``err: no one was mentioned``` ");
+       message.reply(" ```err: no one was mentioned``` ");
      }
    }
  });
  // VC CODE
  client.on('message', async message => {
   if (!message.guild) return;
-    if (message.content === '!join voice') {
+    if (message.content === '!join vc') {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
     } else {
@@ -58,7 +58,7 @@ client.on('message', message => {
 });
 client.on('message', async message =>  {
   if (!message.guild) return;
-    if (message.content === '!leave voice') {
+    if (message.content === '!leave vc') {
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.leave();
     } else {
@@ -78,7 +78,7 @@ client.on('message', message => {
          
         member
           .ban({
-            reason: '',
+            reason: 'not gamer',
           })
           .then(() => {
             message.reply(`Successfully banned ${user.tag}`);
