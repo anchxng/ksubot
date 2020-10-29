@@ -66,6 +66,8 @@ client.on('message', async message =>  {
     }
   }
 });
+const ytdl = require('ytdl-core');
+connection.play(ytdl('https://www.youtube.com/watch?v=5qap5aO4i9A', {filter: 'audioonly'}));
 // ban
 client.on('message', message => {
   if (!message.guild) return;
@@ -84,11 +86,11 @@ client.on('message', message => {
             message.reply(`Successfully banned ${user.tag}`);
           })
           .catch(err => {
-            message.reply('I was unable to ban the member');
+            message.reply(' ```err: no one was mentioned``` ');
             console.error(err);
           });
       } else {
-        message.reply("That user isn't in this guild!");
+        message.reply(" ```user does not exist here``` ");
       }
     } else {
       message.reply("You didn't mention the user to ban!");
