@@ -66,8 +66,6 @@ client.on('message', async message =>  {
     }
   }
 });
-const ytdl = require('ytdl-core');
-connection.play(ytdl('https://www.youtube.com/watch?v=5qap5aO4i9A', {filter: 'audioonly'}));
 // ban
 client.on('message', message => {
   if (!message.guild) return;
