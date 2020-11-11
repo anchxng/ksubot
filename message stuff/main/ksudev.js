@@ -69,7 +69,10 @@ client.on('message', message => {
     }
   }
 });
-// token
-if (user) message.content = egg;
-Discord.ReactionEmoji; ":egg:"
-client.login('token here');
+// zzz
+client.on('message', msg => {
+  if (msg.content === 'zzz'){
+    msg.reply; Discord.Emoji; (":zzz:")
+  }
+}
+); 
