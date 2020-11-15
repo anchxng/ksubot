@@ -74,5 +74,5 @@ client.on('message', msg => {
   if (msg.content === 'zzz'){
     msg.reply; Discord.Emoji; (":zzz:")
   }
-}
-); 
+}); 
+client.login = ('NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.5220O-nkjoXChxHOA4l357MiSms')

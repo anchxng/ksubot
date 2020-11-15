@@ -6,4 +6,4 @@ client.on('ready', () => {
   console.log(`robot: on`);
 });
 
-client.login('token here');
+client.login('NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.5220O-nkjoXChxHOA4l357MiSms');
