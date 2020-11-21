@@ -9,4 +9,4 @@ client.on('message', async message => {
       }
     }
   });
- 
+ client.login('tokenhere')

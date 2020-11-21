@@ -22,4 +22,4 @@ client.on('message', msg => {
 	}
 });
 
-client.login(process.env.EGG_BOT_TOKEN);
+client.login(process.env.EGG_BOT_TOKEN = '');
