@@ -13,11 +13,13 @@ client.on('message', msg => {
 	if(msg.content.toLowerCase().includes("egg")){
 		msg.react('🥚');
 		eggCount++;
-		}
+		client.user.setPresence({
+			activity: { 
+				name: `your mom`
+			},
+			status: 'online'
+		})
+	}
 });
-client.user.setPresence({
-    activity: { 
-        name: `your mom🥚`
-    },
-    status: 'online'})
+
 client.login(process.env.EGG_BOT_TOKEN = 'NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.p-hxadM_-70h_C5cmFV25I-U-P0');
