@@ -15,7 +15,7 @@ client.on('message', msg => {
 		eggCount++;
 		client.user.setPresence({
 			activity: { 
-				name: `${eggCount} 🥚`
+				name: `your mom🥚`
 			},
 			status: 'online'
 		})
