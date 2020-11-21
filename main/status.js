@@ -1,3 +1,6 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
 client.user.setPresence({
     activity: { 
         name: `your mom🥚`
