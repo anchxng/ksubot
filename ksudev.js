@@ -69,37 +69,5 @@ client.on('message', message => {
     }
   }
 });
-// kick
-client.on('message', message => {
-  if (!message.guild) return;
-
- if (message.content.startsWith('!kick')) {
-   const user = message.mentions.users.first();
-   if (user) {
-     const member = message.guild.member(user);
-     if (member) {
-       member
-         .kick('Optional reason that will display in the audit logs')
-         .then(() => {
-           message.reply( ```succes```);
-         })
-         .catch(err => {
-           message.reply(' ```missing perms/error``` ');
-           console.error(err);
-         });
-     } else {
-       // The mentioned user isn't in this guild
-       message.reply(" ```user does not exist here``` ");
-     }
-    } else {
-     message.reply(" ```err: no one was mentioned``` ");
-   }
- }
-});
-// zzz
-client.on('message', msg => {
-  if (msg.content === 'zzz'){
-    msg.reply; Discord.Emoji; (":zzz:")
-  }
-}); 
-client.login = ('NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.5220O-nkjoXChxHOA4l357MiSms')
+// token
+client.login('token here');
