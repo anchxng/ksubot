@@ -22,7 +22,7 @@ client.on('message', message => {
             message.reply(`Successfully banned ${user.tag}`);
           })
           .catch(err => {
-            message.reply(' ```err: no one was mentioned``` ');
+            message.reply('err: no one was mentioned');
             console.error(err);
           });
       } else {
