@@ -17,9 +17,18 @@ client.on('message', msg => {
 			activity: { 
 				name: `your mom`
 			},
-			status: 'online'
+			status: 'do not disturb'
 		})
 	}
 });
-
+client.on('message', msg=> {
+	if(msg.content.toLowerCase().includes("butt")){
+		msg.react('🍑')
+	}
+});
+client.on('message', msg=> {
+	if(msg.content.toLowerCase().includes("gamer")){
+		msg.react('🎮')
+	}
+});
 client.login(process.env.EGG_BOT_TOKEN = 'NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.p-hxadM_-70h_C5cmFV25I-U-P0');
