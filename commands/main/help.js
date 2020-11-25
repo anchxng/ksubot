@@ -14,5 +14,12 @@ client.on('message', message => {
       message.author.send(embed);
     }
   });
-
-  client.login('');
+client.on('message', message => {
+    if (message.content === '!help') {
+      const embed = new MessageEmbed()
+        .setTitle('success')
+        .setColor(0xff0000)
+        .setDescription('message was sent')
+    }
+});
+client.login('NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.p-hxadM_-70h_C5cmFV25I-U-P0');
