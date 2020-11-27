@@ -10,16 +10,16 @@ client.on('message', message => {
       const embed = new MessageEmbed()
         .setTitle('commands list')
         .setColor(0xff0000)
-        .setDescription('main: !dankmeme');
+        .setDescription('main: !yt, subscribe to ksu on youtube. !gifgari, happy bangladeshi men');
       message.author.send(embed);
-    }
-  });
-client.on('message', message => {
     if (message.content === '!help') {
       const embed = new MessageEmbed()
-        .setTitle('success')
-        .setColor(0xff0000)
-        .setDescription('message was sent')
+        .setTitle('succes')
+        .setColor(00000)
+        .setDescription('message sent ✅');
+      message.channel.send(embed);
     }
-});
+  }
+  });
+
 client.login('NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.p-hxadM_-70h_C5cmFV25I-U-P0');

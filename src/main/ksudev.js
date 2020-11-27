@@ -8,14 +8,14 @@ client.on('ready', () => {
 
 // MESSAGE CODE
 client.on('message', msg=> {
-    if (msg.content === '!funee'){
-        msg.reply('you')
+    if (msg.content === '!yt'){
+        msg.reply('subscribe to ksu on youtube')
     }
 }
 );
 client.on('message', msg=> {
-    if (msg.content === '!dankmeme'){
-        msg.reply('https://www.reddit.com/r/dankmemes/')
+    if (msg.content === '!gifgari'){
+        msg.reply(' https://tenor.com/view/gifgari-binodon-bangladesh-faruk-ahmed-hahaha-gif-18163719 ')
     }
 }
 );
