@@ -1,5 +1,6 @@
 const Joke = require ('awesome-dev-jokes')
-const { Message } = require('discord.js')
+const { Message, Client } = require('discord.js')
+const client = new Client();
 console.log(Joke.getRandomJoke)
 
 client.on('message', message => {
@@ -7,8 +8,4 @@ client.on('message', message => {
       msg.reply(Joke.getRandomJoke)
     }
 });
-ƒ (); {
-  var i = randomNumber(0, arr.length - 1);
-  return arr[i].joke;
-};
 client.login('NzQwNjE3OTk5OTQ1MzAyMDk5.XyroQw.CB1CgycWXcAGnK8NqvqcruuQvEA');
