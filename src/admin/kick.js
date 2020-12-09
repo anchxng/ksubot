@@ -15,7 +15,7 @@ client.on('message', message => {
        const member = message.guild.member(user);
        if (member) {
          member
-           .kick('Optional reason that will display in the audit logs')
+           .kick('not gamer')
            .then(() => {
              message.reply( ```succes```);
            })

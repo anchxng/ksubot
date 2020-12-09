@@ -6,7 +6,8 @@
             "request": "launch",
             "name": "launch bot",
             "skipFiles": ["<assets>", "<other>"],
-            "program": "${workspaceFolder}/src/main/ksudev.js"
+            "program": "${workspaceFolder}/src/main/ksudev.js",
+            "program": "${workspaceFolder}/src/main/jokes.js"
         }
     ]
 }
