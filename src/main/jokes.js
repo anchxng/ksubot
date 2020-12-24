@@ -1,7 +1,10 @@
 const Joke = require ('awesome-dev-jokes')
 const { Message, Client } = require('discord.js')
 const client = new Client();
-console.log(Joke.getRandomJoke)
+
+client.on('ready', () => {
+  console.log('robot on');
+});
 
 client.on('message', message => {
     if(message.content === '!joke'){
